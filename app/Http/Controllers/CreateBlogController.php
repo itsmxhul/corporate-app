@@ -10,16 +10,18 @@ class CreateBlogController extends Controller
     /**
      * Display a listing of the resource.
      */
-    public function index()
-    {
-        //
+    public function createblog(){
+        return view('create_blog');
     }
-    public function create_blog(Request $request){
+
+    public function validblogs(Request $request)
+    {
 
         $request->validate([
             'title' => 'required',
             'description' => 'required'
         ]);
+            // dd($request);
 
         $create_blog = new create_blog;
 
@@ -31,6 +33,12 @@ class CreateBlogController extends Controller
     /**
      * Show the form for creating a new resource.
      */
+
+
+     public function dynamicblog(){
+        return view('blogs',compact('blogs'));
+    }
+
     public function create()
     {
         //

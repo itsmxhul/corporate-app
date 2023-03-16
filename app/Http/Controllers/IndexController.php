@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Models\create_blog;
 
 use Illuminate\Http\Request;
 
@@ -13,7 +14,8 @@ class IndexController extends Controller
         return view('about');
     }
     public function blogs(){
-        return view('blogs');
+        $blogs =create_blog::all();
+        return view('blogs',compact('blogs'));
     }
     public function contact(){
         return view('contact');
@@ -41,9 +43,6 @@ class IndexController extends Controller
     }
     public function team(){
         return view('team');
-    }
-    public function create_blog(){
-        return view('create_blog');
     }
     public function gallery(){
         return view('gallery');

@@ -37,8 +37,8 @@ Route::get('/single',[IndexController::class,'single']);
 Route::get('/typography',[IndexController::class,'typography']);
 Route::get('/team',[IndexController::class,'team']);
 Route::get('/logout',[AuthController::class,'logout']);
-Route::get('/create_blog',[IndexController::class,'create_blog']);
-Route::post('/create_blog',[CreateBlogController::class,'create_blog']);
-Route::post('/create_blog',[CreateBlogController::class,'create_blog']);
+Route::get('/createblog',[CreateBlogController::class,'createblog']);
+Route::post('/createblog',[CreateBlogController::class,'validblogs']);
+// Route::get('/createblog',[CreateBlogController::class,'dynamicblog']);
 Route::get('/gallery',[IndexController::class,'gallery']);
 

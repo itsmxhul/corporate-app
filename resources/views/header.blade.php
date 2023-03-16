@@ -83,7 +83,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                   @guest
                   @else
                   <li class="nav-item">
-					<a class="nav-link" href="create_blog">Uplod Blog</a>
+					<a class="nav-link" href="createblog">Uplod Blog</a>
 				  </li>
                   @endguest
                   <li class="nav-item">

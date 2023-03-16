@@ -15,8 +15,9 @@
         <div class="contact-form mt-5">
             <div class="row">
                 <div class="col-lg-7 col-md-10 mx-auto">
-                    <form name="contactform" id="contactform" method="post" action="" onsubmit="return(validate());" novalidate="novalidate">
+                    <form name="contactform" id="contactform" method="post" action="">
                         @csrf
+
                         <div class="form-group">
                             <label>Title</label>
                             <input type="text" class="form-control border-2" id="title" placeholder="Title" name="title">
